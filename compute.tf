@@ -18,7 +18,7 @@ resource "aws_launch_configuration" "asg_launch_conf" {
 
   user_data = <<-EOF
   #!/bin/bash
-  echo "Hello, my name is sly, this service is provided from ${var.region}" > index.html
+  echo "Hello, Folks , this service is propably  provided from ${var.region}  . Yupee dee yeah !" > index.html
   nohup busybox httpd -f -p "${var.web_port}" &
   EOF
 
